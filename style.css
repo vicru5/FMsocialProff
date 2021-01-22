@@ -196,5 +196,67 @@ main .container{
 }
 
 @media (max-width: 375px){
-	
+	main{
+		overflow: scroll;
+	}
+
+	main .container{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		width: 90%;
+	}
+
+	.container .text, .stars, .coments{
+		grid-column: 1/1;
+	}
+
+	.container .text h1{
+		width: 100%;
+		padding: 0px 30px;
+		text-align: center;
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	.container .text p{
+		width: 100%;
+		text-align: center;
+		margin-top: 3%;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	.container .stars{
+		align-items: center; 
+	}
+
+	.stars .star{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.stars .star img{
+		margin-right: 7px;
+		margin-bottom: 9px;
+	}
+
+	.stars div:nth-child(1), .stars div:nth-child(2), .stars div:nth-child(3){
+		position: relative;
+		left: 0%;
+	}
+
+	.container .coments{
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 40px;
+		padding-bottom: 70px; 
+	}
+
+	.coments .coment{
+		width: 100%;
+	}
 }
