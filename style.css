@@ -33,6 +33,10 @@ img[alt="bkBottom"]{
 	top: -50%;
 }
 
+img[alt="mbTop"], img[alt="mbBottom"]{
+	display: none;
+}
+
 main{
 	display: flex;
 	position: absolute;
@@ -52,11 +56,11 @@ main .container{
 	height: 85%;
 }
 
-/*DELETE
+/*BORRAR
 .container .text, .stars, .coments{
 	border: 1px solid black;
-}
-*/
+}*/
+
 
 
 .container .text h1{
@@ -196,6 +200,22 @@ main .container{
 }
 
 @media (max-width: 375px){
+	
+	img[alt="bkTop"], img[alt="bkBottom"]{
+		display: none;
+	}
+
+	img[alt="mbTop"], img[alt="mbBottom"]{
+		display: block;
+		position: absolute;
+	}
+
+	img[alt="mbBottom"]{
+		bottom: 0px;
+		right: 0px;
+	}
+
+
 	main{
 		overflow: scroll;
 	}
