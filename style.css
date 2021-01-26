@@ -27,10 +27,15 @@ body{
 	overflow: hidden;
 }
 
+img[alt="bkTop"]{
+	position: relative;
+	left: -5%
+}
+
 img[alt="bkBottom"]{
 	position: relative;
-	right: -25%;
-	top: -50%;
+	right: -18%;
+	bottom: 36%;
 }
 
 img[alt="mbTop"], img[alt="mbBottom"]{
