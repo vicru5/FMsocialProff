@@ -52,35 +52,37 @@ main .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 45% 55%;
-	width: 80%;
-	height: 85%;
+	width: 875px;
+	height: 474px;
 }
 
-/*BORRAR
+/*
 .container .text, .stars, .coments{
 	border: 1px solid black;
-}*/
+}
+
+*/
 
 
 
 .container .text h1{
-	width: 70%;
+	width: 341px;
 	font-family: 'Spartan';
 	font-weight: 700;
 	text-align: left;
-	font-size: 45px;
+	font-size: 40px;
 	color: var(--dark-magenta);
-	line-height: 50px;
+	line-height: 40px;
 }
 
 .container .text p{
-	width: 80%;
+	width: 370px;
 	font-family: 'Spartan';
 	font-weight: 500;
 	margin-top: 3%;
 	color: var(--gray-magenta);
-	line-height: 25px;
-	font-size: 14px;
+	line-height: 20px;
+	font-size: 12px;
 }
 
 .container .stars{
@@ -93,41 +95,46 @@ main .container{
 .stars .star{
 	display: flex;
 	margin: 10px 0px;
-	width: 75%;
-	padding: 20px 35px;
+	width: 350px;
+	height: 42px;
+	padding: 2px 20px;
 	border-radius: 5px;
 	flex-flow: row wrap;
 	align-items: center;
 	background-color: var(--light-magenta);
 }
 
-.stars .star img{
-	margin-right: 7px;
+.stars .star .rate{
+	margin-right: 30px;
+}
+
+.stars .star .rate img{
+	height: 12px;
 }
 
 .stars .star p{
 	padding-top: 3px;
 	margin-left: 10px;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: 'Spartan';
 	font-weight: 700;
 	color: var(--dark-magenta);
-	line-height:13px;
+	line-height:12px;
 }
 
 .stars div:nth-child(1){
 	position: relative;
-	left: 5%;
+	left: 20px;
 }
 
 .stars div:nth-child(2){
 	position: relative;
-	left: 15%;
+	left: 40px;
 }
 
 .stars div:nth-child(3){
 	position: relative;
-	left: 25%;
+	left: 80px;
 }
 
 .container .coments{
@@ -140,11 +147,11 @@ main .container{
 }
 
 .coments .coment{
-	width: 32%;
-	height: auto;
-	padding: 45px 40px;
+	width: 274px;
+	height: 184px;
+	padding: 45px 24px 36px 24px;
 	background-color: var(--dark-magenta);
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .coment .profile{
@@ -156,16 +163,16 @@ main .container{
 
 .profile  img{
 	border-radius: 50%;
-	width: 40px;
-	height: 40%;
+	width: 30px;
+	height: 30%;
 }
 
 .profile .photoText{
-	margin-left: 20px;
+	margin-left: 17px;
 }
 
 .profile .photoText p{
-	font-size: 13px;
+	font-size: 11px;
 	font-family: 'Spartan';
 	font-weight: 700;
 	margin: 2px 0px;
@@ -179,14 +186,14 @@ main .container{
 
 .coment .comText{
 	font-family: 'Spartan';
-	font-weight: 500;
+	font-weight: 400;
 	color: white;
 	margin-top: 10px;
 }
 
 .coment .comText p{
-	font-size: 13px;
-	line-height: 18px;
+	font-size: 10px;
+	line-height: 15px;
 }
 
 .coments div:nth-child(1){
@@ -218,6 +225,7 @@ main .container{
 
 	main{
 		overflow: scroll;
+		align-items: flex-start;
 	}
 
 	main .container{
@@ -225,6 +233,7 @@ main .container{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		width: 90%;
+		margin-top: 100px;
 	}
 
 	.container .text, .stars, .coments{
@@ -242,7 +251,8 @@ main .container{
 	.container .text p{
 		width: 100%;
 		text-align: center;
-		margin-top: 3%;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		font-size: 14px;
 		line-height: 25px;
 	}
@@ -253,13 +263,26 @@ main .container{
 
 	.stars .star{
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		width: 100%;
+		height: 70px;
 	}
 
-	.stars .star img{
-		margin-right: 7px;
-		margin-bottom: 9px;
+	.stars .star .rate{
+		display: block;
+		margin: 0px auto;
+	}
+
+	.stars .star .rate img{
+		height: 15px;
+		margin: 0px 2px;
+	}
+
+	.stars .star p{
+		font-size: 13px;
+		display: block;
+		margin: 10px auto;
 	}
 
 	.stars div:nth-child(1), .stars div:nth-child(2), .stars div:nth-child(3){
@@ -278,5 +301,59 @@ main .container{
 
 	.coments .coment{
 		width: 100%;
+		height: 250px;
+		padding: 45px  35px;
 	}
+
+	.coment .profile{
+		/*border: 1px solid black;*/
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+
+	.profile  img{
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+	}
+
+	.profile .photoText{
+		margin-left: 17px;
+	}
+
+	.profile .photoText p{
+		font-size: 12px;
+		font-family: 'Spartan';
+		font-weight: 700;
+		margin: 2px 0px;
+		color: var(--white);
+	}
+
+	.profile .photoText p:nth-child(2){
+		font-weight: 400;
+		color: var(--soft-pink);
+	}
+
+	.coment .comText{
+		font-family: 'Spartan';
+		font-weight: 400;
+		color: white;
+		margin-top: 10px;
+	}
+
+	.coment .comText p{
+		font-size: 13px;
+		line-height: 25px;
+	}
+
+	.coments div:nth-child(1){
+		position: relative;
+		top: -15px;
+	}
+
+	.coments div:nth-child(3){
+		position: relative;
+		bottom: -15px;
+	}	
 }
