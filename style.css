@@ -57,8 +57,8 @@ main .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 45% 55%;
-	width: 875px;
-	height: 474px;
+	width: 1000px;
+	height: 510px;
 }
 
 /*
@@ -68,44 +68,51 @@ main .container{
 
 */
 
-
+.container .text{
+	padding-top: 15px;
+}
 
 .container .text h1{
-	width: 341px;
+	width: 365px;
 	font-family: 'Spartan';
 	font-weight: 700;
 	text-align: left;
-	font-size: 40px;
+	letter-spacing: -2px;
+	font-size: 44px;
 	color: var(--dark-magenta);
-	line-height: 40px;
+	line-height: 43px;
 }
 
 .container .text p{
-	width: 370px;
+	width: 400px;
+	height: 62px;
 	font-family: 'Spartan';
 	font-weight: 500;
-	margin-top: 3%;
+	margin-top: 12px;
+	letter-spacing: -0.5px;
 	color: var(--gray-magenta);
-	line-height: 20px;
-	font-size: 12px;
+	line-height: 22px;
+	font-size: 13.5px;
 }
 
 .container .stars{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start; 
+	align-items: flex-start;
+	padding: 15px;
 }
 
 .stars .star{
 	display: flex;
-	margin: 10px 0px;
-	width: 350px;
-	height: 42px;
-	padding: 2px 20px;
-	border-radius: 5px;
+	width: 400px;
+	height: 50px;
+	margin: 7px 0px;
+	padding: 2px 25px;
+	border-radius: 10px;
 	flex-flow: row wrap;
 	align-items: center;
+	justify-content: flex-start;
 	background-color: var(--light-magenta);
 }
 
@@ -114,12 +121,12 @@ main .container{
 }
 
 .stars .star .rate img{
-	height: 12px;
+	margin-left:3px; 
+	height: 15px;
 }
 
 .stars .star p{
-	padding-top: 3px;
-	margin-left: 10px;
+	margin-left: 0px;
 	font-size: 12px;
 	font-family: 'Spartan';
 	font-weight: 700;
@@ -127,19 +134,14 @@ main .container{
 	line-height:12px;
 }
 
-.stars div:nth-child(1){
-	position: relative;
-	left: 20px;
-}
-
 .stars div:nth-child(2){
 	position: relative;
-	left: 40px;
+	left: 45px;
 }
 
 .stars div:nth-child(3){
 	position: relative;
-	left: 80px;
+	left: 85px;
 }
 
 .container .coments{
@@ -148,15 +150,15 @@ main .container{
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 40px; 
+	padding-top: 62px; 
 }
 
 .coments .coment{
-	width: 274px;
-	height: 184px;
-	padding: 45px 24px 36px 24px;
+	width: 314px;
+	height: 210px;
+	padding: 54px 28px;
 	background-color: var(--dark-magenta);
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .coment .profile{
@@ -168,16 +170,17 @@ main .container{
 
 .profile  img{
 	border-radius: 50%;
-	width: 30px;
-	height: 30%;
+	width: 36px;
+	height: 36%;
 }
 
 .profile .photoText{
-	margin-left: 17px;
+	margin-left: 20px;
 }
 
 .profile .photoText p{
-	font-size: 11px;
+	font-size: 12px;
+	line-height: 15px;
 	font-family: 'Spartan';
 	font-weight: 700;
 	margin: 2px 0px;
@@ -191,14 +194,15 @@ main .container{
 
 .coment .comText{
 	font-family: 'Spartan';
-	font-weight: 400;
+	font-weight: 500;
 	color: white;
-	margin-top: 10px;
+	margin-top: 7px;
 }
 
 .coment .comText p{
-	font-size: 10px;
-	line-height: 15px;
+	font-size: 12.5px;
+	letter-spacing: -0.5px;
+	line-height: 19px;
 }
 
 .coments div:nth-child(1){
